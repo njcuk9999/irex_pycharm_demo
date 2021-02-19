@@ -51,9 +51,12 @@ def main():
     # add all members to a list
     irex_presenters = [etienne, neil, bob]
 
+    # TODO: Uncomment when ready
+    #   ----- demo: debugger
+    # neil.study_fish()
+
     # choose someone to show a plot - and show it
     get_someone_to_show_a_plot(irex_presenters)
-
 
 def get_someone_to_show_a_plot(presenters: List[irex.IrexMember]):
     """

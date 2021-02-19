@@ -70,6 +70,9 @@ def fancy_plot(frames: list, color: str,
     return frames
 
 
+class AstrophysicsError(Exception):
+    pass
+
 # =============================================================================
 # Start of code
 # =============================================================================

@@ -157,10 +157,13 @@ class PostDoc(Researcher):
         :return:
         """
         if self.name == 'Daniel':
-            if random.uniform(0, 1) > 0.5:
-                self.study_fish()
+            if random.uniform(0, 1) > 0:
+                raise misc.AstrophysicsError('This is not astrophysics')
             else:
-                time.sleep(complex(0, 1))
+                # sleep for 12 hours
+                time.sleep(3600 * 12)
+        else:
+            self.do_astrophysics()
 
 
 class Student(IrexMember):
@@ -175,6 +178,14 @@ class Student(IrexMember):
         self.color = 'yellow'
         # call to super class
         super().__init__(name, importance)
+
+    def do_astrophysics(self):
+        it = 0
+        while it < 10:
+            print('Some astrophysics has been done!')
+            # sleep for a few hours
+            time.sleep(1)
+            it += 1
 
 
 # =============================================================================
