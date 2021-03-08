@@ -30,7 +30,7 @@
 
 ---
 
-### Neil Cook - 2021-03-08
+Neil Cook - 2021-03-08
 
 ---
 
@@ -166,35 +166,20 @@
 ## Why Pycharm?
 
 There are many reasons. Here are a few of mine:
-
 - It's **free** (community addition)
    - **professional version** available with _your_ university account
-  
-- Project management
-
+- Great for project management
 - **PEP8** (python grammer) suggestions
-  
-- code completion and suggestions
-  
-- code syntax highlighting   
-  
+- code completion, suggestions and syntax highlighting
 - code and module indexing
-  - Ctrl+Click to nagivate
-  - nagivate back and forwards
-  
-- local version of code history  
-  
-- git integration is awesome!  
-  
+  - Ctrl+Click to nagivate, nagivate back and forwards
+- local version of code history
+- git integration is awesome!
 - debugging is awesome!
-  
 - plus much much more!
-
-- It _is_ complicated 
-  - there is a lot to it
+- It _is_ complicated (there is a lot to it)
   - but don't let that put you off!
-  
-##
+
 
 ```
 
@@ -395,14 +380,14 @@ There are many reasons. Here are a few of mine:
 
 - new branch: `>> git branch test3`
 
-- make a change and commit it
+- make a change and commit it, equivalent to:
 ```
 >> git commit origin test3
 >> git push origin test3
 ```
 
 - compare branches 
-- merge branches 
+- merge branches, equivalent to:
 
 ```
    >> git checkout test1
@@ -410,8 +395,7 @@ There are many reasons. Here are a few of mine:
 ```  
 
 ##
-##
-##
+
 
 ```
 
@@ -453,37 +437,35 @@ There are many reasons. Here are a few of mine:
   - there are **NO** stupid questions
   
 ##
-##
-##
-
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ```
-##
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
 
 ## Summary
 
@@ -495,12 +477,10 @@ There are many reasons. Here are a few of mine:
 - Good coding style is also a big help!
 - Don't use pycharm for presentations
 
-## 
-
 # Thanks!
 
 ##
-##
+
 ```
 
 
