@@ -9,7 +9,6 @@ Created on 2021-02-18
 
 @author: cook
 """
-import numpy as np
 import matplotlib.pyplot as plt
 import random
 import time
@@ -66,7 +65,7 @@ class IrexMember:
 
     def show_plot(self, color=None):
         fig, frames = plt.subplots(ncols=2, nrows=1)
-        frames = misc.fancy_plot(frames, color, self.name, self.kind)
+        misc.fancy_plot(frames, color, self.name, self.kind)
 
 
 class Professor(IrexMember):
@@ -85,7 +84,6 @@ class Professor(IrexMember):
             self.importance = 1000
         # call to super class
         super().__init__(name, 1000)
-
 
     def chair_meeting(self):
         """
@@ -115,7 +113,6 @@ class Researcher(IrexMember):
         super().__init__(name, importance)
         # is permanent
         self.is_permanent = False
-
 
     def find_permanent_position(self):
         """
