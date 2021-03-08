@@ -58,6 +58,7 @@ def main():
     # ----------------------------------
     # Add Rene
     rene = irex.Professor('Rene', importance=10000)
+    rene.importance = 10000000
 
     # TODO: Remove these lines
     # Question: Who has time for astrophysics?
