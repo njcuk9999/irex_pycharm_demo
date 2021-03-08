@@ -445,9 +445,12 @@ There are many reasons. Here are a few of mine:
 ## Help is always near-by
 
 - Slack
-  - we have a `python` channel
+  - we have a `python` channel on irex
+  - this channel isn't used much  
   - any problems (with Pycharm or python) ask there
   - most problems someone will have had before!
+  - or maybe someone else is having the same problem
+  - there are **NO** stupid questions
   
 ##
 ##
@@ -482,7 +485,19 @@ There are many reasons. Here are a few of mine:
 ```
 ##
 
-# Thanks
+## Summary
+
+- An IDE (like Pycharm) is **essential** for coding
+- It really changed the way I coded
+- Help is _always_ available
+  - for IDEs like pycharm (or spyder etc)
+  - for python in general
+- Good coding style is also a big help!
+- Don't use pycharm for presentations
+
+## 
+
+# Thanks!
 
 ##
 ##
