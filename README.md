@@ -53,8 +53,8 @@
 
 # iREx: Pycharm Demonstration
 
-- Most astronomers use at least some python in their research
-- many use a LOT of python in their research.
+- Most astronomers use at least _some_ python in their research
+- many use a **LOT** of python in their research.
 
 ##
 
@@ -119,6 +119,10 @@
     - Sublime Text 3 (with added packages)
     - IDLE
     - Visual Studio Code
+
+###
+
+- I don't work for Pycharm - but I do recommend it as an excellent IDE
   
 ##
 ##
@@ -164,7 +168,7 @@
 There are many reasons. Here are a few of mine:
 
 - It's **free** (community addition)
-   - pro addition - with a university account)
+   - **professional version** available with _your_ university account
   
 - Project management
 
@@ -186,7 +190,7 @@ There are many reasons. Here are a few of mine:
   
 - plus much much more!
 
-- It is complicated 
+- It _is_ complicated 
   - there is a lot to it
   - but don't let that put you off!
   
@@ -270,7 +274,7 @@ There are many reasons. Here are a few of mine:
 ```
 
 
-## Bonus nice features
+## Bonus - many plugins
 
 - jupyter notebook integration (pro only)
 - many plugins
@@ -311,7 +315,9 @@ There are many reasons. Here are a few of mine:
 ## **DEMO**: `irex_demo.py`
 
 - code completion
+- conda environment integration  
 - navigation with Ctrl + Click
+- TODO tracking  
 - local version history
 
 ##

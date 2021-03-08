@@ -43,7 +43,7 @@ def colourize(message: str, color: str = 'green') -> str:
 
 
 def fancy_plot(frames: list, color: str,
-               name: str) -> list:
+               name: str, kind:str) -> list:
     """
     Adds a "fancy" plot
 
@@ -65,7 +65,7 @@ def fancy_plot(frames: list, color: str,
     frames[0].plot(t, s, color=color)
     frames[1].psd(s, 512, 1 / dt, color=color)
 
-    plt.suptitle('{0}\'s plot'.format(name))
+    plt.suptitle('{0}: {1}\'s plot'.format(kind, name))
     # return frames (not really necessary)
     return frames
 

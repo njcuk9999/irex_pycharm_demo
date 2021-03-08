@@ -10,6 +10,7 @@ Created on 2021-02-18
 @author: cook
 """
 import irex_functions as irex
+import matplotlib.pyplot as plt
 import random
 from typing import List
 
@@ -27,6 +28,25 @@ __DATE__ = '2021-02-21'
 # =============================================================================
 # Define functions
 # =============================================================================
+def get_someone_to_show_a_plot(presenters: List[irex.IrexMember]):
+    """
+    Choose someone to show a plot
+
+    :param presenters: list of irex members who are presenters
+    :return:
+    """
+    # get number of presenters
+    num_presenters = len(presenters)
+
+    for iterator in range(3):
+        # choose the presenter number
+        number = random.choice(list(range(num_presenters)))
+        # presenter choosen
+        print('\n{0} was choosen'.format(presenters[number].name))
+        # someone shows a plot
+        presenters[number].show_plot(presenters[number].color)
+
+
 def main():
     """
     The main chunk of our code
@@ -37,13 +57,15 @@ def main():
     # Lets set up some members
     # ----------------------------------
     # Add Rene
-    rene = irex.Professor('Rene Doyon', importance=10000)
+    rene = irex.Professor('Rene', importance=10000)
+
+    # TODO: Code completion here - rene.importance
 
     # Add Etienne
-    etienne = irex.Researcher('Etienne Artigau', importance=999)
+    etienne = irex.Researcher('Etienne', importance=999)
 
     # Add Neil
-    neil = irex.PostDoc('Neil Cook', importance=100)
+    neil = irex.PostDoc('Neil', importance=100)
 
     # Add a student
     bob = irex.Student('Bob', importance=1)
@@ -58,21 +80,8 @@ def main():
     # choose someone to show a plot - and show it
     get_someone_to_show_a_plot(irex_presenters)
 
-def get_someone_to_show_a_plot(presenters: List[irex.IrexMember]):
-    """
-    Choose someone to show a plot
-
-    :param presenters: list of irex members who are presenters
-    :return:
-    """
-    # get number of presenters
-    num_presenters = len(presenters)
-    # choose the presenter number
-    number = random.choice(list(range(num_presenters)))
-    # presenter choosen
-    print('\n{0} was choosen'.format(presenters[number].name))
-    # someone shows a plot
-    presenters[number].show_plot(presenters[number].color)
+    plt.show()
+    plt.close()
 
 
 # =============================================================================

@@ -22,6 +22,7 @@ import misc
 # =============================================================================
 class IrexMember:
 
+    kind: str = 'IrexMember'
     name: str
     mood: Union[str, None]
     color: str = 'green'
@@ -65,9 +66,7 @@ class IrexMember:
 
     def show_plot(self, color=None):
         fig, frames = plt.subplots(ncols=2, nrows=1)
-        frames = misc.fancy_plot(frames, color, self.name)
-        plt.show()
-        plt.close()
+        frames = misc.fancy_plot(frames, color, self.name, self.kind)
 
 
 class Professor(IrexMember):
@@ -79,9 +78,11 @@ class Professor(IrexMember):
         """
         # set color
         self.color = 'red'
+        # set kind
+        self.kind += ' Professor'
         # deal with no importance set
         if importance is None:
-            importance = 1000
+            self.importance = 1000
         # call to super class
         super().__init__(name, 1000)
 
@@ -105,6 +106,8 @@ class Researcher(IrexMember):
         """
         # set color
         self.color = 'blue'
+        # set kind
+        self.kind += ' Researcher'
         # deal with no importance set
         if importance is None:
             importance = 100
@@ -139,6 +142,8 @@ class PostDoc(Researcher):
         super().__init__(name, importance)
         # set color
         self.color = 'magenta'
+        # set kind
+        self.kind += ' PostDoc'
 
     def find_permanent_position(self):
         """
@@ -163,6 +168,7 @@ class PostDoc(Researcher):
                 # sleep for 12 hours
                 time.sleep(3600 * 12)
         else:
+            time.sleep(1)
             self.do_astrophysics()
 
 
@@ -174,8 +180,8 @@ class Student(IrexMember):
         :param name: does it even matter?
         :param importance: not very high
         """
-        # set color
-        self.color = 'yellow'
+        # set kind
+        self.kind += ' Student'
         # call to super class
         super().__init__(name, importance)
 
