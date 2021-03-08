@@ -59,6 +59,11 @@ def main():
     # Add Rene
     rene = irex.Professor('Rene', importance=10000)
 
+    # TODO: Remove these lines
+    # Question: Who has time for astrophysics?
+    rene.do_astrophysics()
+    rene.work = my_function_to_work
+
     # TODO: Code completion here - rene.importance
 
     # Add Etienne
@@ -75,6 +80,7 @@ def main():
 
     # TODO: Uncomment when ready
     #   ----- demo: debugger
+    # Question: Why am I studying fish?
     # neil.study_fish()
 
     # choose someone to show a plot - and show it
